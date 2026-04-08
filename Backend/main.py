@@ -26,4 +26,3 @@ async def startup():
 
 app.include_router(auth_router)
 app.include_router(project_router)
-
