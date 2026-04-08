@@ -6,7 +6,7 @@ from config.security import get_password_hash, verify_password
 import models, schemas
 
 router = APIRouter(
-    prefix="/auth",
+    # prefix="/auth",
     tags=["Authentication"]
 )
 
