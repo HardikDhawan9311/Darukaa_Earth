@@ -10,7 +10,8 @@ import {
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, ArcElement, Title, Tooltip, Legend, Filler);
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || 'https://darukaa-earth-backend.onrender.com';
 const DEFAULT_COORDS = [78.9629, 22.5937];
 const CHART_CONFIG = {
   responsive: true,
