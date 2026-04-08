@@ -8,7 +8,10 @@ app = FastAPI(title="Darukaa Earth API")
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"], # Your React dev server URL
+    allow_origins=[
+        "http://localhost:5173",               # local frontend
+        "https://darukaa-earth-beige.vercel.app",  # deployed frontend
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
