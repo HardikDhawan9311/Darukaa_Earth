@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Eye, EyeOff, User, Mail, Lock, ShieldCheck } from 'lucide-react';
+import { Eye, EyeOff, User, Mail, Lock, ShieldCheck, Leaf, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import toast from 'react-hot-toast';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Bell, User } from 'lucide-react';
+import { Search, User } from 'lucide-react';
 
 const TopNavbar = ({ user }) => {
   return (
@@ -14,11 +14,6 @@ const TopNavbar = ({ user }) => {
       </div>
 
       <div className="flex items-center space-x-6">
-        <div className="relative cursor-pointer hover:bg-white/5 p-2 rounded-xl transition-all">
-          <Bell className="w-6 h-6 text-gray-400" />
-          <span className="absolute top-2 right-2 w-2 h-2 bg-[#ff3d5f] rounded-full border-2 border-[#000306]"></span>
-        </div>
-        
         <div className="flex items-center space-x-4 pl-4 border-l border-white/10">
           <div className="text-right hidden sm:block">
             <p className="text-sm font-bold text-white uppercase tracking-tight">{user?.fullName}</p>
